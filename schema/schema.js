@@ -25,7 +25,13 @@ const RootQuery = new GraphQLObjectType({
         user: {
             type: UserType,
             args: {id:{type:GraphQLString}},
-            resolve(parentvalue)
+            resolve(parentvalue,args){
+                return _.find(users,{id:args.id})
+            }
         }
     }
+})
+
+module.exports = new GraphQLSchema({
+    query:RootQuery
 })
