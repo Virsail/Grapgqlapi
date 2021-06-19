@@ -25,7 +25,7 @@ const RootQuery = new GraphQLObjectType({
         user: {
             type: UserType,
             args: {id:{type:GraphQLString}},
-            resolve
+            resolve(parentvalue)
         }
     }
 })
