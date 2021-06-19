@@ -32,6 +32,6 @@ const RootQuery = new GraphQLObjectType({
     }
 })
 
-module.exports = new GraphQLSchema({
+module.exports = new graphql.GraphQLSchema({
     query:RootQuery
 })
