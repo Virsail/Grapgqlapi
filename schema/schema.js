@@ -4,8 +4,8 @@ const _ = require ('lodash');
 const {GraphQLObjectType,GraphQLString,GraphQLInt} = graphql
 
 const users = [
-    {"id":"0702644583", "firstname": "Cherryl", "age":20},
-    {"id":"0115068741", "firstname": "Virsail", "age":20},
+    {"id":"1", "firstname": "Mercy", "secondname": "Mukoya", "efficiency delta": 1.3, "nps delta": 1.2, "efficiency": 96, "reported issues": 3, "age":20},
+    {"id":"2", "firstname": "Virsail", "age":20},
 
 ]
 
