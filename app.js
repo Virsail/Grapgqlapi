@@ -4,9 +4,9 @@ const port = 4800 ;
 const app = express()
 const schema = require ('./schema/schema');
 
-import { bodyParserGraphQL } from 'body-parser-graphql'
 
-app.use('/graphql',expressGraphQl,bodyParserGraphQL({
+
+app.use('/graphql',expressGraphQl({
     schema,
     graphiql:true
 }))
