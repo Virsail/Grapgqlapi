@@ -28,6 +28,7 @@ const visits = [
     {"location": "Mukurukwaruben", "hospital": "Mukuru Referral", "times": 12 },
     {"location": "Babadogo", "hospital": "Level 5", "times": 38 },
     {"location": "Kosovo", "hospital": "Clinic Kosovo", "times": 4 },
+    {"location": "Kakamega", "hospital": "Oasis", "times": 46 },
     {"location": "Mukurukwanjenga", "hospital": "Mukuru level5", "times": 26 }
 ] 
 
