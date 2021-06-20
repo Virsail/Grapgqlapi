@@ -4,10 +4,10 @@ const _ = require ('lodash');
 const {GraphQLObjectType,GraphQLString,GraphQLInt} = graphql
 
 const users = [
-    {"id":"1", "firstname": "Mercy", "secondname": "Mukoya", "efficiencydelta": "1.3", "npsdelta": "1.2", "efficiency": 96, "reportedissues":"3", "age":20},
-    {"id":"2", "firstname": "Kennedy", "secondname": "Ayako", "efficiency delta": "1.8", "nps delta": "1.8", "efficiency": 92, "reported issues":"6", "age":20},
-    {"id":"3", "firstname": "Stephanie", "secondname": "Tomsett", "efficiency delta": "2.7", "nps delta": "2.0", "efficiency": 58, "reported issues":"1", "age":30},
-    {"id":"4", "firstname": "Faith", "secondname": "Kityo", "efficiency delta": "2.8", "nps delta": "2.5", "efficiency": 74, "reported issues":"8", "age":42},
+    {"id":"1", "firstname": "Mercy", "secondname": "Mukoya",   "efficiency": 96,  "age":20},
+    {"id":"2", "firstname": "Kennedy", "secondname": "Ayako",   "efficiency": 92,  "age":20},
+    {"id":"3", "firstname": "Stephanie", "secondname": "Tomsett",  "efficiency": 58,  "age":30},
+    {"id":"4", "firstname": "Faith", "secondname": "Kityo",  "efficiency": 74,  "age":42},
 
 ]
 
@@ -17,10 +17,7 @@ fields:{
     id:{type:GraphQLString},
     firstname:{type:graphql.GraphQLString},
     secondname:{type:graphql.GraphQLString},
-    efficiencydelta:{type:graphql.GraphQLString},
-    npsdelta:{type:graphql.GraphQLString},
     efficiency:{type:graphql.GraphQLInt},
-    reportedissues:{type:graphql.GraphQLInt},
     age:{type:graphql.GraphQLInt},
 
 }
@@ -31,7 +28,7 @@ const visits = [
     {"location": "Mukurukwaruben", "hospital": "Mukuru Referral", "times": 12 },
     {"location": "Babadogo", "hospital": "Level 5", "times": 38 },
     {"location": "Kosovo", "hospital": "Clinic Kosovo", "times": 4 },
-    {"location": "Mukurukwaruben", "hospital": "Mukuru level5", "times": 26 }
+    {"location": "Mukurukwanjenga", "hospital": "Mukuru level5", "times": 26 }
 ] 
 
 const VisitType = new graphql.GraphQLObjectType({
@@ -91,7 +88,6 @@ const RootQuery = new GraphQLObjectType({
         }
     }
 })
-
 
 
 module.exports = new graphql.GraphQLSchema({
