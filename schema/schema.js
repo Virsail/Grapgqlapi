@@ -53,8 +53,12 @@ const keyissues = [
 
 ]
 
-const KeyisuueType = new graphql.GraphQLObjectType({
-    
+const KeyissueType = new graphql.GraphQLObjectType({
+    name: 'Keyissue',
+    fields:{
+        issue:{type:graphql.GraphQLString},
+        location:{type:graphql.GraphQLString},
+    }
 })
 
 const RootQuery = new GraphQLObjectType({
@@ -74,6 +78,16 @@ const RootQuery = new GraphQLObjectType({
             resolve(parentvalue,args){
                 return _.find(visits,{location:args.location})
             }
+        },
+
+        keyissue: {
+            type:KeyissueType,
+            args: {issue:{type:GraphQLString}},
+            resolve(parentvalue,args){
+                return _.find(keyissues,{issue:args.issue})
+            }
+
+
         }
     }
 })
