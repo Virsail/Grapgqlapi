@@ -26,6 +26,23 @@ fields:{
 }
 })
 
+const visits = [
+    {"location": "Kiambu", "hospital": "Matter Hospital", "times": 7 },
+    {"location": "Mukurukwaruben", "hospital": "Mukuru Referral", "times": 12 },
+    {"location": "Babadogo", "hospital": "Level 5", "times": 38 },
+    {"location": "Kosovo", "hospital": "Clinic Kosovo", "times": 4 },
+    {"location": "Mukurukwaruben", "hospital": "Mukuru level5", "times": 26 }
+] 
+
+const VisitType = new graphql.GraphQLObjectType({
+    name: 'Visit',
+    fields:{
+        location:{type:graphql.GraphQLString},
+        hospital:{type:graphql.GraphQLString},
+        times:{type:GraphQLInt},
+    }
+})
+
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
@@ -47,22 +64,6 @@ const RootQuery = new GraphQLObjectType({
     }
 })
 
-const visits = [
-    {"location": "Kiambu", "hospital": "Matter Hospital", "times": 7 },
-    {"location": "Mukurukwaruben", "hospital": "Mukuru Referral", "times": 12 },
-    {"location": "Babadogo", "hospital": "Level 5", "times": 38 },
-    {"location": "Kosovo", "hospital": "Clinic Kosovo", "times": 4 },
-    {"location": "Mukurukwaruben", "hospital": "Mukuru level5", "times": 26 }
-] 
-
-const VisitType = new graphql.GraphQLObjectType({
-    name: 'Visit',
-    fields:{
-        location:{type:graphql.GraphQLString},
-        hospital:{type:graphql.GraphQLString},
-        times:{type:GraphQLInt},
-    }
-})
 
 
 module.exports = new graphql.GraphQLSchema({
