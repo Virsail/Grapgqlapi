@@ -35,6 +35,14 @@ const RootQuery = new GraphQLObjectType({
             resolve(parentvalue,args){
                 return _.find(users,{id:args.id})
             }
+        },
+
+        visit: {
+            type: VisitType,
+            args: {location:{type:GraphQLString}},
+            resolve(parentvalue,args){
+                return _.find(visits,{location:args.location})
+            }
         }
     }
 })
@@ -56,19 +64,6 @@ const VisitType = new graphql.GraphQLObjectType({
     }
 })
 
-const RootQuery = new GraphQLObjectType({
-    name: 'RootQueryType',
-    fields: {
-        visit: {
-            type: VisitType,
-            args: {location:{type:GraphQLString}},
-            resolve(parentvalue,args){
-                return _.find(visits,{location:args.location})
-            }
-        }
-    }
-})
-    
 
 module.exports = new graphql.GraphQLSchema({
     query:RootQuery
