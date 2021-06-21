@@ -31,6 +31,7 @@ const visits = [
     {"location": "Kakamega", "hospital": "Oasis", "times": 46 },
     {"location": "Kalibu", "hospital": "Alib", "times": 16 },
     {"location": "India", "hospital": "ulius", "times": 9 },
+    {"location": "Kayole", "hospital": "juja", "times": 8 },
     {"location": "Mukurukwanjenga", "hospital": "Mukuru level5", "times": 26 }
 ] 
 
