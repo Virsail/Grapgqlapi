@@ -6,8 +6,6 @@ const schema = require ('./schema/schema');
 
 
 
-
-
 app.use('/graphql',expressGraphQl({
     schema,
     graphiql:true
@@ -16,5 +14,6 @@ app.use('/graphql',expressGraphQl({
 const PORT = process.env.PORT  || 5000;
 
 app.listen (PORT, () => console.log(`listening to port ${PORT}`));
+
 
 
