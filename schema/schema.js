@@ -49,6 +49,7 @@ const keyissues = [
     {"issue": "wrong prescription", "location": "Kosovo"},
     {"issue": "late opening", "location": "Kiambu"},
     {"issue": "bad receipts", "location": "New York"},
+    {"issue": "report delay", "location": "Kiambu"},
     {"issue": "lab delay", "location": "Kiambu"},
     {"issue": "careless waste disposal", "location": "Kiambu"},
 
