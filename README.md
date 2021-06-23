@@ -33,12 +33,8 @@ cd ..(project name)
 ##### Define Port number (where yu want the application to run)
  ```in the main application file 
  const PORT = process.env.PORT  || (your port number);
- 
 ``` 
-##### Define Port number
-```
-Define root query
-```
+##### Define root query
 ##### Run the application
  ```npm start
 ```
