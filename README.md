@@ -22,7 +22,8 @@ A GraphQL endpoint for Access Afya analytics platform built on Javascript that w
  node -v
 ```
 ##### Create and Navigate into the project directory (Linux Ubuntu Shell)
- ```mkdir ..(project name)
+ ```
+mkdir ..(project name)
 cd ..(project name)
 ```
 ##### Install package.json 
