@@ -36,7 +36,8 @@ cd ..(project name)
 ``` 
 ##### Define root query
 ##### Run the application
- ```npm start
+ ```
+ npm start
 ```
 Open the application on your browser `localhost:(your port number)/graphql(as defined)`.  
   
