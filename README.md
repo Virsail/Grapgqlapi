@@ -1,5 +1,6 @@
 # Grapgqlapi
- GraphQL Api for AccessAfya 
+ GraphQL Api for AccessAfya  
+# Author
 [virsail mbagaya](https://github.com/virsail)  
   
 # Description  
@@ -45,7 +46,7 @@ Open the application on your browser `localhost:(your port number)/graphql(as de
 ## Technology used  
   
 *   Javascript
-* [Heroku](https://heroku.com)  
+* [Heroku](https://heroku.com)  (deployment)
   
   
 ## Contact Information   
