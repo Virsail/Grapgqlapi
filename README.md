@@ -25,7 +25,8 @@ A GraphQL endpoint for Access Afya analytics platform built on Javascript that w
 cd ..(project name)
 ```
 ##### Install package.json 
- ```npm init
+ ```
+ npm init
 ```  
 
  ##### Define data structure in Schema folder
