@@ -10,8 +10,8 @@ A GraphQL endpoint for Access Afya analytics platform built on Javascript that w
  View App site [View Site](https://accessafyagraphqlendpoint.herokuapp.com/graphql)  
   
 
-
-
+## Instance Screenshot 
+![Screenshot from 2021-06-28 03-14-39](https://user-images.githubusercontent.com/66640798/123563758-1078a700-d7bf-11eb-9fdb-e0d71f0f96d6.png)
 
   
 ## Setup and Installation  
